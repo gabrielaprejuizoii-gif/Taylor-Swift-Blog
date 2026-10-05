@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Taylor Swift: Music, Talent & You</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav aria-label="Main">
+<a href="#read">Read</a><a href="#facts">Fun Facts</a><a href="#music">Music</a><a href="#words">Words</a><a href="#doyou">Do you…?</a><a href="#quiz">Quiz</a><a href="#opinion">My Opinion</a><a href="#teacher">Teacher</a>
+</nav>
+
+<header>
+<div class="beads" id="beads" aria-hidden="true"></div>
+<h1>Taylor Swift: Music, Talent &amp; You</h1>
+<p>A pastel pink fan magazine to read, learn new words and talk about music.</p>
+<a class="btn" href="#read">Start reading</a>
+</header>
+
+<main>
+<section id="read">
+<h2>Meet Taylor</h2>
+<p class="lead">Read the story. Tap the pink words to find them in the Word Bank.</p>
+<div class="read">
+<div>
+<p>Taylor Swift is a talented singer and songwriter. She is also very creative. She is from the United States. She was born on December 13, 1989.</p>
+<p>Taylor loves music. She plays the guitar and the piano. She writes her own songs. Her songs tell simple stories about love, friendship and life.</p>
+<p>Her songs are often emotional. Her powerful performances connect with a large audience.</p>
+<p>Taylor has a successful career. Her first album came out in 2006. Now she has millions of fans. Her fans are called Swifties.</p>
+<p>Her journey is inspiring. She has passion for music and confidence on stage.</p>
+</div>
+<aside class="side">
+<h3>Look and think</h3>
+<ul>
+<li>Is Taylor talented?</li>
+<li>What stories does she tell?</li>
+<li>Is her career successful?</li>
+<li>Why is her journey inspiring?</li>
+</ul>
+</aside>
+</div>
+</section>
+
+<section id="facts">
+<h2>Fun Facts</h2>
+<div class="grid">
+<div class="fact" style="--k:var(--a)"><b>1989</b>Taylor was born in 1989. She also has an album called <em>1989</em>.</div>
+<div class="fact" style="--k:var(--b)"><b>13</b>Her lucky number is 13. She was born on the 13th.</div>
+<div class="fact" style="--k:var(--e)"><b>Personality</b>Taylor has a creative personality. She plays the guitar and the piano.</div>
+<div class="fact" style="--k:var(--c)"><b>Cats</b>Taylor has a passion for cats. Her cats are famous too!</div>
+<div class="fact" style="--k:var(--d)"><b>Eras Tour</b>Millions of fans went to her Eras Tour. The audience sang every song.</div>
+</div>
+</section>
+
+<section id="music">
+<h2>Her Music: Era by Era</h2>
+<p class="lead">An “era” is a time with its own music and style. Here are some of Taylor's albums.</p>
+<div class="grid">
+<div class="era" style="--k:#FBE8EE"><small>2006</small><h3>Taylor Swift</h3><p>Her first album. It has a country sound and simple stories.</p></div>
+<div class="era" style="--k:#F7D6E0"><small>2008</small><h3>Fearless</h3><p>A happy, golden album. The melody of each song is easy to remember.</p></div>
+<div class="era" style="--k:#E9D3E3"><small>2010</small><h3>Speak Now</h3><p>She wrote all the songs herself. Very creative!</p></div>
+<div class="era" style="--k:#EFC4D2"><small>2012</small><h3>Red</h3><p>An emotional album about love and change.</p></div>
+<div class="era" style="--k:#F3C9BC"><small>2014</small><h3>1989</h3><p>A bright, popular pop album.</p></div>
+<div class="era" style="--k:#DFA3B7"><small>2017</small><h3>reputation</h3><p>A strong, dark and powerful sound.</p></div>
+<div class="era" style="--k:#F9E1E8"><small>2019</small><h3>Lover</h3><p>Soft pink and blue. Full of love.</p></div>
+<div class="era" style="--k:#FFF0E8"><small>2020</small><h3>folklore &amp; evermore</h3><p>Calm songs. They tell stories like a book.</p></div>
+<div class="era" style="--k:#E8C5D6"><small>2022</small><h3>Midnights</h3><p>Songs about nights when you cannot sleep.</p></div>
+</div>
+</section>
+
+<section id="words">
+<h2>Word Bank</h2>
+<p class="lead">These are the pink words from the reading. Tap a card to turn it. Read the sentence out loud.</p>
+<div class="grid" id="wordgrid"></div>
+</section>
+
+<section id="doyou">
+<h2>Do you…?</h2>
+<p class="lead">Answer in a full sentence. Start with <b>Yes, I do.</b> or <b>No, I don't.</b></p>
+<div id="qs"></div>
+</section>
+
+<section id="quiz">
+<h2>Reading Quiz</h2>
+<div class="quiz">
+<div class="prog"><div id="bar"></div></div>
+<h3 id="qt"></h3>
+<div class="opts" id="opts"></div>
+<p class="msg" id="msg" aria-live="polite"></p>
+<button class="btn alt" id="next" hidden>Next question</button>
+</div>
+</section>
+
+<section id="opinion">
+<h2>My Opinion</h2>
+<div class="opin">
+<p style="margin:0">Make your own sentences. Then say them to your teacher.</p>
+<label for="o1">My favorite Taylor Swift song is…</label>
+<input id="o1" placeholder="Write a song name">
+<label for="o2">I like it because it is…</label>
+<select id="o2"><option>emotional</option><option>powerful</option><option>creative</option><option>inspiring</option><option>beautiful</option><option>fun</option></select>
+<label for="o3">I think Taylor is…</label>
+<select id="o3"><option>talented</option><option>creative</option><option>successful</option><option>inspiring</option></select>
+<div class="result" id="res" aria-live="polite"></div>
+</div>
+</section>
+
+<section id="teacher">
+<h2>Teacher's Corner</h2>
+<details><summary>How to use this page (A1 level)</summary>
+<p>1. Read aloud together. Ask the student to find and click the pink words. 2. Flip the Word Bank cards and ask the student to make a new sentence with each word. 3. Use the “Do you…?” questions for speaking practice. Ask follow-up questions: <i>Why? When? Who with?</i> 4. Finish with the quiz and the opinion sentences.</p>
+</details>
+<details><summary>Extra speaking ideas</summary>
+<p>Describe a favourite album cover with colours. Say three things you like about Taylor's music. Ask your teacher: “Do you like Taylor Swift?” Practise: <i>She is… She plays… She writes… She has…</i> (third person “s”).</p>
+</details>
+</section>
+</main>
+
+<footer>
+<div>A fan-made English learning blog. Not official. All text is original and simple for learners.</div>
+<button class="btn" id="theme">Light / Dark mode</button>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
